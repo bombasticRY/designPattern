@@ -16,11 +16,7 @@ import java.util.Scanner;
  */
 public class ProtoTypeShape {
     public static void main(String[] args) {
-        ProtoTypeManager pm = new ProtoTypeManager();
-        Shape obj1 = (Circle)pm.getShape("Circle");
-        obj1.countArea();
-        Shape obj2 = (Square)pm.getShape("Square");
-        obj2.countArea();
+
     }
 }
 
@@ -66,7 +62,7 @@ class Square implements Shape{
         int a = 0;
         System.out.println("请输入正方形的边长：");
         Scanner input = new Scanner(System.in);
-        a = input.nextInt();
+        a = input.nextInt()
         System.out.println("正方形的面积为：" + a * a + "\n");
     }
 }
